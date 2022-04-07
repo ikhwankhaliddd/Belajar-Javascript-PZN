@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In Operator</title>
+</head>
+<body>
+<script>
+    // const person ={
+    //     firstName: 'Ikhwan',
+    //     lastName: "Khaleed"
+    // }
+    // if ("midName" in person) {
+    // alert(`hello ${person.firstName}`)
+    // }
+    // else{
+    //     alert('Object Not found')
+    // }
+
+
+    const student ={
+        firstName: 'Ikhwan',
+        lastName: "Khaleed",
+        midName: undefined
+    }
+
+    if ("midName" in student){
+        alert(`Hello ${student.midName}`)
+    }
+
+    const names = [null,"Ikhwan",null];
+
+    const result = 0 in names; // tetap dianggap true karena dia hanya mengecek ada atau tidak nya sebuah object
+    document.writeln(result)
+;
+</script>
+</body>
+</html>

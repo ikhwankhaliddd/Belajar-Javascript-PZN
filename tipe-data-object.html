@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object</title>
+</head>
+<body>
+<script>
+    const orang = {}; // object kosong
+
+    orang["nama"] = "Muhammad Ikhwan Khalid";// memasukkan key dan value ke dalam object
+    orang["alamat"] = "Indonesia";
+    orang["umur"] = 30;
+
+    console.table(orang);
+
+    delete orang["umur"];
+
+    console.table(orang);
+
+    const person = {
+        name: "Ikhwan",
+        alamat: "Indonesia",
+        umur: 30
+    }// memasukkan data kedalam object
+
+    console.table(person);
+
+    console.log(`Nama: ${person.name}`)
+    console.log(`Alamat: ${person.alamat}`)
+    console.log(`Umur: ${person.umur}`)
+</script>
+</body>
+</html>

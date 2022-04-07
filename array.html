@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+<script>
+    let arrayKosong = [];
+
+    let arrayNama = ["Ikhwan", "Khalid", "Nasution"];
+
+    const names = [];
+
+    names.push("Ikhwan"); // menambahkan data ke array
+    names.push("Khalid", "Nasution");
+    names.push("Budi", "Ridwan");
+    names.push(1,2,3,4,5,true);
+
+    names.push(['Array',"dalam",'array']);// menambahkan array dalam array
+    console.table(names);
+
+    const panjangArray = names.length; // mencari panjang array
+
+    console.log(panjangArray);
+
+    const namaIkhwan = names[0];
+
+    console.log(namaIkhwan);
+
+    names[1] = "Khaleed"; // mengupdate data
+
+    console.table(names);
+
+    delete names[0]; // menghapus data pada array tp index ga hilang
+
+    console.table(names)
+</script>
+</body>
+</html>

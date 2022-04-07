@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konversi String dan Number</title>
+</head>
+<body>
+<script>
+    const value1 = 1;
+    const value2 = parseInt("1");
+    const sum = value1 + value2;
+
+    const hasil = `Hasil : ${sum}`
+
+    document.writeln(hasil)
+
+    document.writeln("<br>")
+
+    const a = 1
+    const b = 1
+    const total = a.toString() + b.toString()
+    document.writeln(`Hasil : ${total}`)
+    document.writeln("<br>")
+
+    const first = Number("salah") // NaN
+    const second = 100;
+    const totalNumber = first + second // Hasilnya akan NaN
+
+
+
+
+    document.writeln(isNaN(totalNumber));
+
+</script>
+</body>
+</html>
