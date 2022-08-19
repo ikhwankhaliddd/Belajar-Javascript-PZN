@@ -25,3 +25,4 @@ var a = function multiply(a, b){
 }
 
 console.log(a(5,10));
+console.log(a(3,10))
